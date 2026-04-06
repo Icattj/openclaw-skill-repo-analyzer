@@ -1,3 +1,7 @@
+# ---
+
+> OpenClaw AI Agent Skill
+
 ---
 name: repo-analyzer
 description: Analyze any codebase and generate LLM-friendly summaries, dependency graphs, and structured documentation. Inspired by GitVizz. Scans repo structure, parses AST for Python/JS/TS, maps imports and function calls, generates context documents. Use when onboarding to a new codebase, reviewing architecture, or building context for complex tasks.
@@ -188,3 +192,13 @@ bash skills/secret-scanner/scripts/scan.sh /path/to/repo
 - Dependency graph is text-based, not interactive
 - Works best with JS/TS/Python. Other languages get basic structure only.
 - Large repos (>10K files) should use --quick mode (structure only, skip deep analysis)
+
+## Installation
+
+```bash
+cp -r repo-analyzer/ ~/.openclaw/workspace/skills/repo-analyzer/
+```
+
+## License
+
+MIT © [Sentra Technology](https://github.com/Icattj)
